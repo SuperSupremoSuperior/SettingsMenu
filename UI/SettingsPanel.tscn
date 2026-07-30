@@ -1,0 +1,45 @@
+[gd_scene format=3 uid="uid://bgkmwfk4exeda"]
+
+[ext_resource type="Script" uid="uid://csffe4jve6wpi" path="res://UI/settings_panel.gd" id="1_06d45"]
+
+[node name="SettingsPanel" type="Control" unique_id=573229127]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_06d45")
+
+[node name="HS_music" type="HSlider" parent="." unique_id=1236129555]
+unique_name_in_owner = true
+layout_mode = 0
+offset_right = 8.0
+offset_bottom = 16.0
+max_value = 1.0
+step = 0.01
+value = 0.5
+
+[node name="HS_sfx" type="HSlider" parent="." unique_id=1621572051]
+unique_name_in_owner = true
+layout_mode = 0
+offset_top = -1.0
+offset_right = 8.0
+offset_bottom = 15.0
+max_value = 1.0
+step = 0.01
+value = 0.5
+
+[node name="OB_screen" type="OptionButton" parent="." unique_id=1144219152]
+unique_name_in_owner = true
+layout_mode = 0
+offset_right = 32.0
+offset_bottom = 20.0
+
+[node name="B_lang" type="Button" parent="." unique_id=1339902424]
+unique_name_in_owner = true
+layout_mode = 0
+offset_right = 8.0
+offset_bottom = 8.0
+
+[node name="Lang_list" type="VBoxContainer" parent="." unique_id=1234539180]
+unique_name_in_owner = true
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0

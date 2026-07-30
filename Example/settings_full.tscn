@@ -1,0 +1,181 @@
+[gd_scene format=3 uid="uid://bml4ks5js8x4c"]
+
+[ext_resource type="Script" uid="uid://dof575fi50wam" path="res://Example/settings_full.gd" id="1_keu1k"]
+
+[node name="SettingsFull" type="Control" unique_id=175777781]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_keu1k")
+
+[node name="settings" type="PanelContainer" parent="." unique_id=443807339]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(500, 300)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -38.0
+offset_right = 20.0
+offset_bottom = 38.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VB" type="VBoxContainer" parent="settings" unique_id=149395628]
+layout_mode = 2
+
+[node name="Title" type="PanelContainer" parent="settings/VB" unique_id=3397417]
+layout_mode = 2
+
+[node name="Title_text" type="RichTextLabel" parent="settings/VB/Title" unique_id=1320080041]
+layout_mode = 2
+text = "Settings"
+fit_content = true
+autowrap_mode = 0
+horizontal_alignment = 1
+
+[node name="Body" type="PanelContainer" parent="settings/VB" unique_id=2078683399]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="VB" type="VBoxContainer" parent="settings/VB/Body" unique_id=2050134467]
+layout_mode = 2
+
+[node name="music" type="PanelContainer" parent="settings/VB/Body/VB" unique_id=1108338540]
+custom_minimum_size = Vector2(0, 31)
+layout_mode = 2
+
+[node name="HB" type="HBoxContainer" parent="settings/VB/Body/VB/music" unique_id=1725571574]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="settings/VB/Body/VB/music/HB" unique_id=1460143134]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Music"
+
+[node name="HS_music" type="HSlider" parent="settings/VB/Body/VB/music/HB" unique_id=1534433717]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 4
+max_value = 1.0
+step = 0.01
+value = 0.5
+
+[node name="sfx" type="PanelContainer" parent="settings/VB/Body/VB" unique_id=1159529575]
+custom_minimum_size = Vector2(0, 31)
+layout_mode = 2
+
+[node name="HB" type="HBoxContainer" parent="settings/VB/Body/VB/sfx" unique_id=594057326]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="settings/VB/Body/VB/sfx/HB" unique_id=918072816]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Sound"
+
+[node name="HS_sfx" type="HSlider" parent="settings/VB/Body/VB/sfx/HB" unique_id=1292554971]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 4
+max_value = 1.0
+step = 0.01
+value = 0.5
+
+[node name="screen" type="PanelContainer" parent="settings/VB/Body/VB" unique_id=1422755338]
+custom_minimum_size = Vector2(0, 31)
+layout_mode = 2
+
+[node name="HB" type="HBoxContainer" parent="settings/VB/Body/VB/screen" unique_id=540047896]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="settings/VB/Body/VB/screen/HB" unique_id=1816243669]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Screen_mode"
+
+[node name="OB_screen" type="OptionButton" parent="settings/VB/Body/VB/screen/HB" unique_id=464186128]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+selected = 0
+item_count = 3
+popup/item_0/text = "Windowed"
+popup/item_0/id = 0
+popup/item_1/text = "Fullscreen"
+popup/item_1/id = 1
+popup/item_2/text = "Borderless"
+popup/item_2/id = 2
+
+[node name="lang" type="PanelContainer" parent="settings/VB/Body/VB" unique_id=1555415430]
+custom_minimum_size = Vector2(0, 31)
+layout_mode = 2
+
+[node name="HB" type="HBoxContainer" parent="settings/VB/Body/VB/lang" unique_id=1317318692]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="settings/VB/Body/VB/lang/HB" unique_id=1452001033]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Language"
+
+[node name="B_lang" type="Button" parent="settings/VB/Body/VB/lang/HB" unique_id=236681724]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+text = "No Language"
+
+[node name="B_leave_settings" type="Button" parent="settings/VB" unique_id=1381807080]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Leave"
+
+[node name="lang" type="PanelContainer" parent="." unique_id=1249313783]
+unique_name_in_owner = true
+visible = false
+custom_minimum_size = Vector2(500, 300)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -31.0
+offset_top = -20.0
+offset_right = 31.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VB" type="VBoxContainer" parent="lang" unique_id=1861236025]
+layout_mode = 2
+
+[node name="Title" type="PanelContainer" parent="lang/VB" unique_id=1997450311]
+layout_mode = 2
+
+[node name="Title_text" type="RichTextLabel" parent="lang/VB/Title" unique_id=461208934]
+layout_mode = 2
+text = "Language"
+fit_content = true
+autowrap_mode = 0
+horizontal_alignment = 1
+
+[node name="Body" type="PanelContainer" parent="lang/VB" unique_id=1111082984]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Lang_list" type="VBoxContainer" parent="lang/VB/Body" unique_id=367895711]
+unique_name_in_owner = true
+layout_mode = 2
+
+[node name="B_leave_lang" type="Button" parent="lang/VB" unique_id=554736539]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Leave"

@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://3mqg1cba02ni"]
+
+[ext_resource type="Script" uid="uid://duo8jdfy1nx0m" path="res://UI/lang_button.gd" id="1_md5yf"]
+
+[node name="LangButton" type="Button" unique_id=972014641]
+script = ExtResource("1_md5yf")
